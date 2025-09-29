@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthy Life - موقع صحي</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #e0f7fa, #fce4ec);
+      text-align: center;
+    }
+    header {
+      background-color: #00796b;
+      color: white;
+      padding: 15px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+      text-shadow: 1px 1px 2px #000;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      padding: 15px;
+      margin: 10px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      width: 80%;
+      max-width: 600px;
+    }
+    iframe, audio {
+      margin: 10px 0;
+      max-width: 100%;
+      border-radius: 10px;
+      outline: 2px solid #00796b;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    input, button {
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #00796b;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #004d40;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌿 موقع Healthy Life</h1>
+    <p>موقع يهتم بالصحة والرياضة 🌸</p>
+  </header>
+
+  <div class="container">
+    
+    <div class="card">
+      <h2>🎥 شاهد الفيديو</h2>
+      <iframe width="320" height="180"
+        src="https://www.youtube.com/embed/T3mgD-mJZVI"
+        title="YouTube Video"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    
+    <div class="card">
+      <h2>🎵 مقطع صوتي عن الرياضة</h2>
+      <audio controls autoplay loop>
+        <source src="sport.mp3" type="audio/mp3">
+        المتصفح لا يدعم تشغيل الصوت.
+      </audio>
+      <p>استمع لمقطع صوتي تحفيزي عن الرياضة 🏃‍♀💪</p>
+    </div>
+
+  
+<div class="card">
+  <h2>📩 تواصل معنا</h2>
+  <form>
+    <input type="email" placeholder="أدخل بريدك الإلكتروني" required>
+    <input type="date">
+    <input type="number" placeholder="عمرك">
+    <input type="color" value="#00796b">
+    
+   
+    <textarea placeholder="اكتب مشكلتك أو ملاحظتك هنا..." rows="4" required></textarea>
+    
+    <button type="submit">إرسال</button>
+  </form>
+</div>
