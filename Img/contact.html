@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا</title>
+    <style>
+        body { font-family: Arial, sans-serif; direction: rtl; text-align: right; background-color: #f4f4f4; }
+        .container { padding: 20px; }
+        form { background: white; padding: 15px; border-radius: 5px; box-shadow: 0 0 5px #aaa; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>اتصل بنا</h1>
+</header>
+
+<div class="container">
+    <form action="submit_inquiry.php" method="post">
+        <label for="name">الاسم:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        <label for="email">البريد الإلكتروني:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <label for="message">الرسالة:</label>
+        <textarea id="message" name="message" required></textarea>
+        <br><br>
+        <input type="submit" value="إرسال">
+    </form>
+</div>
+
+<footer>
+  
+</footer>
+
+</body>
+</html>
